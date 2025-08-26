@@ -1,0 +1,199 @@
+/* ====== GLOBAL ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f9f9f9;
+  color: #445964; 
+}
+
+/* ====== NAVBAR ====== */
+.navbar {
+  width: 100%;
+  padding: 20px 0;
+  background: #ffffff;
+}
+
+.navbar .container {
+  max-width: 1300px; /* mesma largura do home */
+  margin: 0 auto;
+  padding: 0 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 55px; /* aumentado */
+}
+
+/* ====== MENU ====== */
+.menu ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #445964; 
+  transition: 0.3s;
+}
+
+.menu ul li a:hover {
+  color: #263138;
+  font-weight: 500;
+}
+
+/* ====== HOME ====== */
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 80px;
+  min-height: calc(100vh - 80px);
+  background-color: #fdfdfd;
+  max-width: 1300px; /* largura máxima */
+  margin: 0 auto; /* centraliza no meio da tela */
+}
+
+.home-text {
+  max-width: 600px;
+  margin-top: -125px; 
+}
+
+.home-text p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #445964; 
+}
+
+.home-text h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #445964; 
+}
+
+.home-text h3 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  color: #445964; 
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #263138; 
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #1a242c;
+}
+
+/* ====== SOCIAL ICONS ====== */
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  transition: 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.15);
+}
+
+/* ====== HOME IMAGE ====== */
+.home-img img {
+  max-width: 400px;
+  border-radius: 8px;
+}
+
+/* ====== SOBRE MIM ====== */
+.sobre {
+  padding: 70px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  color: #445964;
+  margin-top: -40px; /* aproxima da seção Home */
+}
+
+.sobre .container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.sobre-logo img {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.sobre h2 {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.sobre h2 strong {
+  font-weight: 900;
+  color: #263138; /* Júnior */
+}
+
+.sobre p {
+  font-size: 16px;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+.skills-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #445964;
+}
+
+.skills-title strong {
+  color: #263138; /* Hard */
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  justify-items: center;
+}
+
+.skill h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #445964;
+}
+
+.rating {
+  display: flex;
+  gap: 6px;
+}
+
+.rating img {
+  width: 24px;
+  height: 24px;
+}
