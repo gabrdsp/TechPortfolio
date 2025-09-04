@@ -18,7 +18,7 @@ body {
 }
 
 .navbar .container {
-  max-width: 1300px; /* mesma largura do home */
+  max-width: 1300px;
   margin: 0 auto;
   padding: 0 80px;
   display: flex;
@@ -27,7 +27,7 @@ body {
 }
 
 .logo img {
-  height: 55px; /* aumentado */
+  height: 55px;
 }
 
 /* ====== MENU ====== */
@@ -49,6 +49,7 @@ body {
   font-weight: 500;
 }
 
+
 /* ====== HOME ====== */
 .home {
   display: flex;
@@ -56,8 +57,8 @@ body {
   align-items: center;
   padding: 60px 80px;
   min-height: calc(100vh - 80px);
-  max-width: 1300px; /* largura máxima */
-  margin: 0 auto; /* centraliza no meio da tela */
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 .home-text {
@@ -118,7 +119,6 @@ body {
   transform: scale(1.15);
 }
 
-/* ====== HOME IMAGE ====== */
 .home-img img {
   max-width: 400px;
   border-radius: 8px;
@@ -129,7 +129,7 @@ body {
   padding: 70px 20px;
   text-align: center;
   color: #445964;
-  margin-top: -40px; /* aproxima da seção Home */
+  margin-top: -40px;
 }
 
 .sobre .container {
@@ -150,7 +150,7 @@ body {
 
 .sobre h2 strong {
   font-weight: 900;
-  color: #263138; /* Júnior */
+  color: #263138; 
 }
 
 .sobre p {
@@ -168,7 +168,7 @@ body {
 }
 
 .skills-title strong {
-  color: #263138; /* Hard */
+  color: #263138; 
 }
 
 .skills {
@@ -222,12 +222,12 @@ body {
 
 .portfolio-header h2 span:first-child {
   display: block;
-  color: #263138; /* "Meu" */
+  color: #263138; 
 }
 
 .portfolio-header h2 span:last-child {
   display: block;
-  color: #445964; /* "Portfólio" */
+  color: #445964;
 }
 
 .portfolio-header p {
@@ -362,12 +362,11 @@ body {
   color: #263138;
 }
 
-/* 14 ícones → 2 linhas de 7 */
 .tech-icons {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 30px 40px; /* espaçamento col/linha */
-  justify-items: center; /* centraliza cada ícone na célula */
+  gap: 30px 40px; 
+  justify-items: center; 
 }
 
 .tech-icons img {
@@ -387,8 +386,7 @@ body {
 /* ====== FORMAÇÃO ACADÊMICA ====== */
 .formacao {
   padding: 70px 20px;
-  text-align: center;
-  color: #445964;
+  color: #000;
 }
 
 .formacao .container {
@@ -396,99 +394,131 @@ body {
   margin: 0 auto;
 }
 
-/* Cabeçalho */
+.formacao-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
 .formacao-header h2 {
   font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 10px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.formacao-header .formacao-azul {
   color: #445964;
 }
 
-.formacao-header h2 strong {
-  color: #263138;
+.formacao-header .formacao-preto {
+  color: #000;
 }
 
 .formacao-header p {
   font-size: 16px;
+  max-width: 400px;
+  line-height: 1.5;
   color: #445964;
-  margin-bottom: 50px;
-  line-height: 1.6;
 }
 
-/* Linha do tempo */
 .timeline {
   position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 2px solid #5f8597;
-  padding: 40px 0;
+  width: 100%;
 }
 
-.timeline::after {
-  content: "→";
+.timeline .linha {
   position: absolute;
-  right: -25px;
-  top: -15px;
-  font-size: 24px;
-  color: #5f8597;
-}
-
-.timeline-item {
-  position: relative;
-  text-align: center;
-  flex: 1;
-}
-
-.timeline-item::before {
-  content: "";
-  position: absolute;
-  top: -11px;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
+  height: 100%;
+}
+
+.evento {
+  position: relative;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.evento .ponto {
   width: 14px;
   height: 14px;
-  background: #5f8597;
+  background: #445964;
   border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 6px;
 }
 
-.timeline-item span {
-  display: block;
-  font-size: 14px;
+.evento .conteudo {
+  margin-left: calc(50% + 40px);
+  max-width: 600px;
+}
+
+.evento .conteudo h3 {
+  font-size: 20px;
   font-weight: 700;
-  margin-top: -35px;
   color: #000;
+  margin-bottom: 4px;
 }
 
-.timeline-item p {
-  font-size: 14px;
-  margin-top: 25px;
-  color: #000;
+.evento .conteudo h4 {
+  font-size: 16px;
   font-weight: 500;
-  line-height: 1.4;
-}
-
-/* Citação */
-.formacao-quote {
-  margin-top: 60px;
-  font-size: 15px;
+  margin-bottom: 10px;
   color: #445964;
-  line-height: 1.6;
 }
 
-.formacao-quote .aspas {
-  width: 40px;
+.evento .conteudo ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.evento .conteudo ul li {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 6px;
+  color: #445964;
+}
+
+.citacao {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.citacao img {
+  width: 28px;
   margin-bottom: 15px;
 }
 
-.formacao-quote em {
-  color: #263138;
-  font-weight: 600;
+.citacao p {
+  font-size: 15px;
+  max-width: 600px;
+  margin: 0 auto 10px;
+  line-height: 1.5;
+  color: #445964;
 }
 
-.formacao-quote strong {
-  display: block;
-  margin-top: 10px;
+.citacao span {
   font-weight: 700;
   color: #263138;
+}
+
+/* ====== RODAPÉ ====== */
+.footer {
+  background: #dfdfdf;
+  padding: 3px;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+.footer p {
+  color: #445964;
+  margin-bottom: 2px;
 }
